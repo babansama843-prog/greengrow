@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GreenGrow 🌱</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌱 GreenGrow</h1>
+<p class="tagline">Smart Plant Growing Guide</p>
+
+<input type="text" id="search" placeholder="Search plant name...">
+</header>
+
+<section class="filters">
+
+<select id="seasonFilter">
+<option value="">All Seasons</option>
+<option value="Kharif">Kharif</option>
+<option value="Rabi">Rabi</option>
+<option value="Zaid">Zaid</option>
+<option value="Spring">Spring</option>
+<option value="Summer">Summer</option>
+<option value="Winter">Winter</option>
+<option value="Monsoon">Monsoon</option>
+</select>
+
+<select id="typeFilter">
+<option value="">Indoor / Outdoor</option>
+<option value="Indoor">Indoor</option>
+<option value="Outdoor">Outdoor</option>
+</select>
+
+<select id="areaFilter">
+<option value="">Growing Area</option>
+<option value="Pot">Pot</option>
+<option value="Ground">Ground</option>
+<option value="Both">Both</option>
+</select>
+
+</section>
+
+<main>
+<div id="plantContainer"></div>
+</main>
+
+<!-- Modal -->
+
+<div id="modal" class="hidden">
+<div class="modal-content">
+
+<span id="close">×</span>
+
+<h2 id="plantName"></h2>
+<p id="scientific"></p>
+
+<p><strong>Indoor/Outdoor:</strong> <span id="type"></span></p>
+<p><strong>Growing Area:</strong> <span id="area"></span></p>
+<p><strong>Season:</strong> <span id="season"></span></p>
+<p><strong>Sunlight:</strong> <span id="sun"></span></p>
+<p><strong>Watering:</strong> <span id="water"></span></p>
+<p><strong>Growing Period:</strong> <span id="grow"></span></p>
+<p><strong>Maturity:</strong> <span id="maturity"></span></p>
+<p><strong>Organic Fertilizer:</strong> <span id="organic"></span></p>
+<p><strong>Inorganic Fertilizer:</strong> <span id="inorganic"></span></p>
+<p><strong>Common Problems:</strong> <span id="problems"></span></p>
+
+<h3>🌿 Growing Steps</h3>
+<ul id="steps"></ul>
+
+<button id="reminderBtn">⏰ Set Water Reminder</button>
+
+</div>
+</div>
+
+<script src="plants-data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
